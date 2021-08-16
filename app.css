@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
 body {
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    animation: gradient 12s ease infinite;
+    background-size: 400% 400%;
     font-family: "Montserrat", sans-serif;
     
 }
@@ -80,3 +82,14 @@ button {
     transition: 0.5s;
 }
 
+@keyframes gradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
